@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sort_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg"
+    tools:context="com.example.dolin.tracealgo.sortMenu">
+
+    <TextView
+        android:text="Sorting Algorithms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:id="@+id/textView"
+        android:width="300dp"
+        tools:background="?attr/colorControlHighlight"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold"
+        android:textSize="30dp"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        android:fontFamily="cursive" />
+
+    <Button
+        android:text="Algo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectalgo"
+        style="@style/Widget.AppCompat.Button"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/selecttrace"
+        android:layout_alignBottom="@+id/selecttrace"
+        android:layout_alignEnd="@+id/Selection"
+        android:onClick="algoselect" />
+
+    <Button
+        android:text="Example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/bubbleexample"
+        android:onClick="sorteg" />
+
+    <Button
+        android:text="Trace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selecttrace"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:background="@android:color/holo_blue_dark"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_marginTop="31dp"
+        android:onClick="traceselect (sortMenu)"
+        android:layout_below="@+id/Selection"
+        android:layout_alignStart="@+id/Selection" />
+
+    <TextView
+        android:text="Bubble Sort"
+        android:layout_width="wrap_content"
+        android:width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bubble"
+        android:background="?attr/colorControlHighlight"
+        android:textColor="@android:color/background_light"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textSize="30dp"
+        android:layout_above="@+id/binalgo"
+        android:layout_alignEnd="@+id/binalgo"
+        android:layout_marginBottom="41dp" />
+
+    <Button
+        android:text="algo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/binalgo"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:background="@color/colorPrimary"
+        android:textSize="20dp"
+        android:onClick="algobubble"
+        android:layout_above="@+id/bubbleexample"
+        android:layout_alignStart="@+id/selectalgo"
+        android:layout_marginBottom="19dp" />
+
+    <Button
+        android:text="TRACE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bubbletrace"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:background="@android:color/holo_blue_dark"
+        android:textSize="20dp"
+        android:onClick="tracebubble"
+        android:layout_alignBaseline="@+id/binalgo"
+        android:layout_alignBottom="@+id/binalgo"
+        android:layout_alignStart="@+id/bubble" />
+
+    <Button
+        android:text="Example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exampleselection"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/bubbleexample"
+        android:onClick="selecteg" />
+
+    <TextView
+        android:text="Selection Sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Selection"
+        android:textStyle="normal|bold"
+        android:width="250dp"
+        android:textColor="@android:color/background_light"
+        android:background="?attr/colorControlHighlight"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

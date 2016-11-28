@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sorteg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/bg"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dolin.tracealgo.sorteg">
+
+
+    <EditText
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/getno5"
+        android:hint="no5"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:layout_above="@+id/sort"
+        android:layout_alignStart="@+id/getno1"
+        android:layout_marginBottom="41dp" />
+
+    <TextView
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:id="@+id/putno4"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/getno3"
+        android:layout_alignStart="@+id/putno2"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:id="@+id/putno5"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/getno4"
+        android:layout_alignStart="@+id/putno4"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/getno4"
+        android:hint="no4"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/getno5"
+        android:layout_alignStart="@+id/getno3" />
+
+    <EditText
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/getno3"
+        android:hint="no3"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:layout_marginBottom="24dp"
+        android:layout_above="@+id/getno4"
+        android:layout_alignStart="@+id/getno2" />
+
+    <EditText
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/getno2"
+        android:hint="no2"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/putno2"
+        android:layout_alignStart="@+id/getno1" />
+
+    <TextView
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:id="@+id/putno2"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:layout_marginBottom="32dp"
+        android:textSize="20dp"
+        android:layout_above="@+id/putno3"
+        android:layout_alignStart="@+id/putno1" />
+
+    <TextView
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:id="@+id/putno3"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/getno3"
+        android:layout_alignStart="@+id/putno4" />
+
+    <TextView
+        android:text="Bubble Sort Step by Step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView19"
+        android:textAlignment="textStart"
+        android:textStyle="normal|bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sort"
+        android:layout_marginBottom="38dp"
+        android:onClick="sortNumber"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textView19"
+        android:layout_marginEnd="57dp" />
+
+    <TextView
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:id="@+id/putno1"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView19"
+        android:layout_toEndOf="@+id/getno1"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/getno1"
+        android:hint="no1"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:layout_above="@+id/getno2"
+        android:layout_toStartOf="@+id/sort"
+        android:layout_marginBottom="14dp" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.dolin.tracealgo.MainActivity">
+
+    <Button
+        android:text="Sorting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Sortbutton"
+        android:onClick="sortMenu"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:background="?attr/colorControlHighlight"
+        android:layout_marginTop="73dp"
+        android:width="200dp"
+        android:layout_below="@+id/Name"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Select an Option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:id="@+id/Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        android:lineSpacingExtra="10dp"
+        android:fontFamily="casual"
+        android:textStyle="normal|bold"
+        android:background="?attr/actionModeSplitBackground"
+        android:width="300dp"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Searching"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Searchbutton"
+        android:onClick="searchMenu"
+        android:fontFamily="monospace"
+        android:textSize="24sp"
+        android:textColor="#fafe00"
+        android:textStyle="normal|italic"
+        android:background="?attr/colorControlHighlight"
+        android:ellipsize="end"
+        android:width="200dp"
+        android:layout_marginTop="87dp"
+        android:layout_below="@+id/Sortbutton"
+        android:layout_alignStart="@+id/Sortbutton" />
+
+
+</RelativeLayout>

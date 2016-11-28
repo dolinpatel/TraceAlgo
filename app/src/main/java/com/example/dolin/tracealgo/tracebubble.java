@@ -1,0 +1,13 @@
+package com.example.dolin.tracealgo;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class tracebubble extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_tracebubble);
+    }
+}
